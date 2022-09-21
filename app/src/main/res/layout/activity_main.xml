@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100dp"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imageview1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="33dp"
+                android:paddingLeft="15dp"
+                android:src="@drawable/gato" />
+
+            <ImageView
+                android:id="@+id/imageview2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="33dp"
+                android:paddingLeft="15dp"
+                android:src="@drawable/elefante" />
+
+            <ImageView
+                android:id="@+id/imageview3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="33dp"
+                android:src="@drawable/leon"
+                android:paddingLeft="15dp"/>
+
+            <ImageView
+                android:id="@+id/imageview4"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="33dp"
+                android:src="@drawable/perro"
+                android:paddingLeft="15dp"/>
+
+            <ImageView
+                android:id="@+id/imageviewopcional"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="33dp"
+                android:src="@drawable/lobo"
+                android:paddingLeft="15dp" />
+
+            <ImageView
+                android:id="@+id/elegida"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="33dp"
+                android:paddingLeft="15dp"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/agrandar"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:orientation="horizontal"
+
+            android:layout_marginHorizontal="200dp"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/camara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tomar la foto de la camara"/>
+
+            <RadioButton
+                android:id="@+id/celular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="elegir una imagen del telefono"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/accionar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aceptar"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
